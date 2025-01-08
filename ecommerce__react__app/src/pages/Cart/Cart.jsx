@@ -51,7 +51,6 @@ import styles from './Cart.module.css'
     setItemQuantity(cartItem.quantity - 1);
     cartValues.setTotal(cartValues.total - (cartItem.price * cartItem.quantity));
     if (cartItem.quantity == 0) {
-      <ModalWind call={isModal} setIsModal={setIsModal} removeItem={removeCartHandler} cartItem={values.cartItem} />
       setCartItems(cartItems.filter(item => item != cartItem));
     }
   }
